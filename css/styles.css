@@ -339,6 +339,7 @@ body{
 .team-section{
     margin-bottom: 120px;
 }
+
 .team-title {
         text-align: center;
         margin-top: 120px;
@@ -455,6 +456,8 @@ body{
  .portfolio-photo-container{
     display: flex;
     width: 1158px;
+    padding-bottom: 120px;
+    
  }
 
  .portfolio-btn-item {
@@ -511,7 +514,8 @@ body{
     text-align: center;
     margin: 0;
     max-width: 300px;
-    margin-bottom: 120px;
+    
+    
     
    }
  
