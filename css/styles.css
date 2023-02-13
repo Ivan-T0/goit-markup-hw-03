@@ -30,13 +30,12 @@
 h1,
 h2,
 h3,
-h4,
-h5,
 p,
 ul{
-  list-style: none;
+  margin: 0;
+  padding: 0;
 }
-p{
+ul{
     list-style: none;
 }
 
@@ -58,14 +57,14 @@ body{
 }
 .header-container{
     display: flex;
-    align-items: center;
-    margin: 0;
-   
+    
+
 }
+
 .section{
-    margin-bottom: 0;
-    display: flex;
+    
    
+   padding-bottom: 120px;
    
 }
 .section-border{
@@ -97,8 +96,7 @@ body{
 
 
 .header-list{
-    margin-top: 0;
-    margin-bottom: 0;
+    
     display: flex;
     padding: 20px 0;
     gap: 40px;
@@ -107,7 +105,7 @@ body{
 }
 
 .header{
-    
+    border: 1px solid var(--c-prtf-border);
 }
 
 
@@ -169,20 +167,19 @@ body{
 
 .hero{
    background-color: #2E2F42;
-  
-}
-.hero-container{
-
-}
+    padding-bottom: 188px;
    
+}
+
 
 .hero-text{
-    text-align: center;
     max-width: 496px;
-    margin-bottom: 48px;
-    margin-left: 287px;
-    margin-right: 287px;
-    margin-top: 188px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 188px;
+    padding-bottom: 48px;
+    
+   
 
 
     font-size : 56px; 
@@ -193,19 +190,11 @@ body{
     
 }
 .hero-button{
-            display: flex;
-            flex-direction: row;
-            align-items: flex-start;
+            display: block;
             padding: 16px 32px;
-            gap: 10px;
-            margin: 0 auto;
-            margin-top: 38px;
-            margin-bottom: 188px;
-        
-    
-
-
-
+             margin: 0 auto;
+            
+            
 
     font-family: 'Roboto';
     font-size: 16px;
@@ -229,10 +218,7 @@ body{
 /* -----------------About-section--------------------- */
 
 
-.about-container{
-    
-    
-}
+
 
 
 .about-section{
@@ -256,18 +242,19 @@ body{
 
 .about-list {
     display: flex;
+    padding-top: 120px;
     gap: 24px;
-    margin-top: 120px;
+    
     
 }
 
 
 .about-list-item {
-    margin-top: 0px;
+    
 }
 
 .about-list-title {
-        margin-top: 0px;
+        padding-bottom: 8px;
     
 
 
@@ -280,7 +267,7 @@ body{
 
 .about-list-text {
     
-
+       
 
 
         font-size: 16px;
@@ -292,15 +279,9 @@ body{
 .work-section {}
 
 
-.work-container{
-    
-   
 
-}
 
 .work-title {
-        margin: 0 auto;
-        margin-top: 120px;
         margin-bottom: 72px;
         display: block;
         text-align: center;
@@ -315,16 +296,23 @@ body{
 
 .work-list {
     display: flex;
-    margin-bottom: 120px;
-    margin-top: 0;
     gap: 24px;
+    
 }
 
 .work-list-item {
     
+    flex-basis: calc((100% - 48px) / 2);
+    
+    
 }
 
-.work-list-photo {}
+.work-list-photo {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
 
 /* ----------------------our-team-------------------- */
 
@@ -336,16 +324,15 @@ body{
 .our-team{
     background-color:var(--bgr-light-blue)
 }
-.team-section{
-    margin-bottom: 120px;
-}
+
 
 .team-title {
         text-align: center;
-        margin-top: 120px;
-        margin-bottom: 72px;
         margin-left: auto;
         margin-right: auto;
+        margin-bottom: 72px;
+
+
         font-size: 36px;
         line-height: 1.11;
         letter-spacing: 0.02em;
@@ -355,29 +342,37 @@ body{
 .team-list {
     display: flex;
     gap: 24px;
-    margin: 0;
-    padding-left: 0;
+    
+    
+    
+    
     
 }
 
 .team-list-item {
     display: flex;
     flex-direction: column;
-    text-align: center;
     justify-content: center;
+    box-shadow: calc((100% - 72px) /3);
+    
+   
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+        border-radius: 0px 0px 4px 4px;
 }
 
 .team-photo {
-    margin-bottom: 32px;
+    
+}
+.team-top{
+    text-align: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 .team-name {
-
+        padding-bottom: 8px;
         margin: 0;
-        margin-bottom: 8px;
-
-
-
+        
         font-size: 20px;
         line-height: 1.2;
         letter-spacing: 0.02em;
@@ -386,12 +381,7 @@ body{
 
 .team-list-text {
         margin: 0;
-        margin-bottom: 32px;
-
-
-
-
-
+       
         font-size: 16px;
         line-height: 1.2;
         letter-spacing: 0.02em;
@@ -406,22 +396,21 @@ body{
 
 
 .footer {
-    background-color: var(--c-gray)
-}
-.footer-container{
-    display: flex;
-    
-    flex-direction: column;
-   
-    width: 264px;
-    height: 110px;
-    margin-top: 100px;
-    margin-bottom: 100px;
-    margin-left: 0px;
+    background-color: var(--c-gray);
+
+
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
+    
+    
+   
+    
+   
+
 .footer-logo{
-        margin-bottom: 16px;
+        
         
 
         font-size: 18px;
@@ -431,7 +420,8 @@ body{
 }
 .footer-text{
 
-    margin: 0;
+    max-width: 264px;
+    padding-top: 16px;
 
     font-size: 16px;
     line-height: 1.5;
@@ -449,14 +439,18 @@ body{
  .porfolio-btn-list {
     display: flex;
     justify-content: center;
-    margin-top: 96px;
-    margin-bottom: 72px;
+    padding-top: 96px;
+    padding-bottom: 72px;
     gap: 24px;
+
+
  }
  .portfolio-photo-container{
+
+
     display: flex;
     width: 1158px;
-    padding-bottom: 120px;
+    
     
  }
 
@@ -483,25 +477,31 @@ body{
             cursor: pointer;
             background: var(--bgr-light-blue)
  }
+
+
+
  .portfolio-btn:hover,
  .portfolio-btn:focus{
     
     color: var(--c-white);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     background: var(--bgr-blue);
+
 }
 
 
  .portfolio-cards-list {
-    padding-left: 0;
     margin: 0;
     display: flex;
+    justify-content: center;
     gap: 24px;
     flex-wrap: wrap;
     
  }
 
  .cards-item {
+        margin: 0;
+        max-width: 300px;
     
     flex-basis: calc( ( 100% - 48px ) / 3 );
     border-bottom: 1px solid var(--c-prtf-border);
@@ -511,9 +511,8 @@ body{
   }  
     
    .cards{
-    text-align: center;
-    margin: 0;
-    max-width: 300px;
+    padding-top: 32px;
+    padding-bottom: 32px;
     
     
     
@@ -521,13 +520,16 @@ body{
  
 
  .cards-photo {
-    margin-bottom: 32px;
+        display: block;
+        max-width: 100%;
+        height: auto;
  }
 
  .cards-title {
         margin: 0 auto;
-        text-align: center;
-        margin-bottom: 8px;
+        padding-bottom: 8px;
+        
+        
 
 
     
@@ -539,9 +541,7 @@ body{
 
  .cards-text {
         margin: 0 auto;
-        margin-bottom: 32px;
-
-        text-align: center;
+        
         
 
 
@@ -549,5 +549,5 @@ body{
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;
-        color: var(--c-gray)
+        color: var(--c-gray);
  }
